@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <style>
+          
+          .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+          float: right;
+          position: relative;
+          
+          
+}
+
+          body  {font-family: Arial, Helvetica, sans-serif;}
+         
+              
+
+
+
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 15px;
+}
+
+button:hover {
+  opacity: 0.8;
+  background-color: white;
+  color:blue;
+  
+
+}
+
+    body { 
+    font-family: monospace; 
+    margin: 0; 
+    font-size: 25px;
+    background-image: url(graphene-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+    width: 50%;
+    max-width: 500px; /* Optional: To prevent it from getting too large on larger screens */
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: To give a semi-transparent effect */
+}
+.fill{box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width:100%;
+  background-color:rgba(36, 62, 91, 0.4);
+  border: transparent;
+  font-size:20px;
+  border-bottom-width: 1px;
+  border-bottom-color: whitesmoke;
+border-radius:10px;
+color:white;
+padding:10px; }
+
+        </style>
+    </head>
+    <body  >
+        <form  class="container">
+            <div >
+              <img src="logo.png" alt="error" class="pic" style="max-height: 200px;max-width: 200px;margin-right: 10px;">
+            </div>
+          <table  style="padding:20px;border-top: 200px;">
+           
+            <div >
+              <tr><td><h1 style="font-family: Audiowide;color: aliceblue;">LifeLine&nbsp;Hospital</h1></td></tr>
+              
+              
+              
+              <tr><td>
+               
+              <input type="text"  class="fill" placeholder="Username" id="usernm" name="uname" required style="margin-bottom: 15px;">
+              <span style="bottom: 50px;" class="material-symbols-outlined" >
+                person
+                </span>
+             </td> </tr>
+            
+             
+              <tr><td>
+              
+              <input type="password" class="fill" id="pass" placeholder="Password" name="psw" required>
+              <span style="bottom: 35px;" class="material-symbols-outlined">
+                lock
+                </span>
+              </td> </tr>
+              <tr><td>
+                
+              <button id="loginbutton"  href="main.html">Login</button></td></tr>
+              <tr><td><label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </td> </tr>
+            </div>
+          </table>
+            
+          </form>
+
+
+
+          <script>
+            
+
+            var butt = document.getElementById('loginbutton');
+
+
+            window.onclick = function(event) {
+              if (event.target == butt) {
+                event.preventDefault();
+                 var username=(document.getElementById('usernm')).value;
+                 var passwrd=(document.getElementById('pass')).value;
+                 if(username=="admin"&&passwrd==1234){
+                  window.location.href = "main.html"
+                 }
+                 else{alert("incorrect username or password");}
+                 }
+}
+
+          </script>
+    </body>
+
+
+
+
+
+
+
+    </html>

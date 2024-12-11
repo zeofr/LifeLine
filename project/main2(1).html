@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;600&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>HOME</title>
+        <style>
+            #banner{
+                padding-top: 100px;
+                padding-bottom:30px;
+                padding-left: 150px;
+                padding-right:60px;
+                margin:0;
+                width:100%;
+                background-image:url(dred-1.png);
+                font-family: Arial, Helvetica, sans-serif;
+                min-height: 400px;
+                font-size: 50px;
+                color: white;
+            }
+            #aboutus{
+                cursor:pointer;
+                color:white;
+                background-color: transparent;
+                border:2px solid rgb(255,255,255);
+                padding:10px;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+            nav a{
+                  width:100%;
+                   text-decoration: none;
+                   color: azure;
+                  
+                   
+                   
+                   }
+                   
+                   a{padding:10px}
+
+                   nav{position: sticky;
+                        position: -webkit-sticky;
+                        top: 0;
+                        background-color: blueviolet;
+                        top:0;
+                    padding-top:30px;padding-bottom: 30px;}
+
+                    .pic{max-height: 50px;max-width: 50px;padding-left: 20px;padding-right:65%;position: relative ;bottom:13px;}
+                    .factbox{
+                        font-family: 'Rajdhani', sans-serif;
+                        font-family: 'Teko', sans-serif;
+                        background-image: url(factbox.jpg);
+                        background-size: cover;
+                        margin-bottom:50px;
+                        margin-top:50px;
+                        background-attachment: fixed;
+                        background-position: center;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-size:20px;
+                        width:100%;
+                        padding:50px;
+                        padding-top: 100px;
+                        padding-bottom: 100px;
+                        line-height:40px ;
+                        text-align: left;;
+                        color:rgba(0,0,0,.7);
+
+                    }
+                    .factpic{
+                        
+                        max-width: 300px;
+                        max-height:400px;
+                        border:40px solid white;
+                        margin:20px;
+                        
+                    }
+
+                    footer{
+                        background-image: url(footer.jpg);
+                        background-size: cover;
+                        
+                        background-attachment: fixed;
+                        background-position: center;
+                        
+                        color:white;
+                        padding:50px;
+                        width:100%;
+                        line-height: 50px;
+                        font-family:'Times New Roman', Times, serif;
+                        padding-top: 60px;
+                        padding-bottom: 60px;
+                        font-size: 15px;}
+
+                        #abtll {
+                            border-radius: 20px;
+            
+            
+                            padding:20px;
+                            margin:30px;
+                            border-radius: 20px;
+                            border:2px solid rgba(0,0,0,.7);
+                            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                            padding:30px 40px;
+            
+                            justify-content: right;
+                            align-items: center;
+                            margin-right: 10%;
+                            margin-left:10%;
+                            width:80%;
+                            margin-top: 100px;
+                    }
+                     
+                    #lessmorebtn{
+                        padding:10px;
+                        background-color:transparent;
+                        border:2px solid green;
+                        color:green;
+                        border-radius: 10px;
+                        font-size:10px;
+                        margin-left: 90%;
+                    }
+                    .whitey{
+                        display: grid;
+                        align-items: center; 
+                        grid-template-columns: 1fr 2fr ;
+                        column-gap: 5px;
+                        
+                    }
+                    .whiteypic{
+                        border-radius: 20px;
+                        max-width: 100%;
+                        max-height: 100%;
+                        
+
+                    }
+                    .whiteyemergency{
+                        
+                        display: grid;
+                        align-items: center; 
+                        grid-template-columns: 1fr 2fr ;
+                        column-gap: 5px;
+                    }
+                    .emergencylinks{
+                        text-decoration: none;
+                        font-size:20px;
+                        padding:20px;
+                        padding-left:50px;
+                        color:blue;
+                        border-bottom: 1px solid black;
+                    }
+                    
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+        </style>
+        </head>
+        <body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            
+            
+            <nav >
+            <img src="logo.png" alt="error" class="pic"  align="left">
+                <a href="main.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="login.html" style="border-width: 1px;border-color: aliceblue;border-radius: 20px;">Log Out</a>
+            </nav>
+          <section id="banner">
+            <b>Bringing Health</b><br>
+            <thin style="font-family: 'Rajdhani', sans-serif ;"> to life for the whole family</thin><br>
+            <button  id="aboutus" >About Us</button>
+          </section>
+          <section id="abtll">
+          <h1 style="font-family: 'Rajdhani', sans-serif;font-size: 35px;">About LifeLine</h1><hr>
+          <p style="padding-bottom:40px;font-size:40px">
+            <div style="margin:50px;font-size:20px"><b>Welcome to LifeLine, a beacon of healing and compassionate care.
+              Nestled in the heart of Bengaluru, our state-of-the-art medical facility is dedicated to providing exemplar
+               healthcare services with a focus on patient well-being.</b><span id="dots">...</span><span id="more"><br><br>
+               With a team of highly skilled and dedicated healthcare professionals,
+               we strive to create a nurturing environment where every individual receives personalized attention and the highest standard of medical treatment.
+                Our commitment to excellence is reflected in the cutting-edge technology and 
+                innovative medical practices employed throughout the hospital.<br>
+                From our emergency department to specialized units, we prioritize patient safety, comfort, and holistic healing.
+                 At LifeLine, we believe in not just treating ailments but fostering a sense of community and support. 
+                 <br><br>
+                 <i>Your health and wellness are our top priorities, and we are honored to be your partner on the journey to a healthier, happier life.</i>
+
+                 </span></p></div>
+                 <button onclick="lessmoreFunc()" id="lessmorebtn">Read more</button>
+          </section>
+
+
+          <section class="factbox">
+            <br> <br>
+          </section>
+
+
+          <h2 align="center" style="font-family:'Rajdhani', sans-serif;font-size: 35px ;">Why LifeLine?</h2>
+        <section class="whiteyemergency">
+            <img src="equipment.jpg" alt="error" class="whiteypic">
+            
+            
+            <p align="left" style="color:rgba(0,0,0,.7);padding:40px;">
+                LifeLine Hospital stands as a beacon of cutting-edge medical technology and state-of-the-art equipment, 
+                epitomizing our unwavering commitment to providing unparalleled healthcare services.<br><br>
+                Our investment in advanced medical technologies ensures precision in diagnostics,
+                 treatment, and patient care. With a comprehensive range of modern equipment, including diagnostic imaging tools,
+                  robotic-assisted surgery systems, and innovative monitoring devices,
+                 we empower our medical professionals to deliver accurate diagnoses and optimal treatment plans.<br><br>
+                 The integration of these technologies not only enhances the efficiency of medical procedures but
+                  also contributes to faster recovery times and improved patient outcomes. 
+                  LifeLine Hospital embraces the transformative power of medical technology, underscoring 
+                  our dedication to delivering world-class 
+                 healthcare that combines compassion with cutting-edge innovation for the well-being of our patients.
+            </p>
+        </section>
+
+
+
+        <section class="factbox">
+            <h2>Maintaining a healthy lifestyle from a medical perspective</h2>
+            
+             <ul style="list-style: circle;list-style: inside;">
+                <li>Consume a well-balanced diet rich in fruits, vegetables, whole grains, lean proteins, and healthy fats.</li>
+                <li>Engage in regular physical activity, including both aerobic exercises and strength training.</li>
+                <li>Drink an adequate amount of water daily to support bodily functions, maintain proper hydration, and promote optimal organ function.</li>
+                <li>Ensure you get enough quality sleep each night. Lack of sleep can negatively impact physical and mental health</li>
+                <li>Practice stress-reducing techniques such as meditation, deep breathing, or yoga.</li>
+                <li>Schedule regular check-ups with healthcare professionals for preventive care.</li>
+                <li>Limit Alcohol Consumption,If you choose to drink alcohol, do so in moderation. </li>
+                <li>Avoid smoking and exposure to secondhand smoke.</li>
+                <li>Strive for and maintain a healthy body weight.</li>
+                <li>Foster positive social connections and relationships.</li>
+
+             </ul>
+             <img src="water.png" alt="error" class="factpic" >
+             <img src="sleep.jpg" alt="error" class="factpic" >
+             <img src="run.jpg" alt="error" class="factpic" >
+        </section>
+
+            
+        <h2 align="center" style="font-family:'Rajdhani', sans-serif;font-size: 35px ;">Emergency Protocol at LifeLine</h2>
+        <section class="whitey">
+
+        
+        <ul style="list-style: none;line-height: 50px;" >
+            
+            <li "><a class="emergencylinks" href="https://www.who.int/health-topics/international-health-regulations" target="_blank"><span class="material-symbols-outlined">
+                link</span> W.H.O Health Regulations</a></li>
+             <li><a class="emergencylinks" href="https://www.healthdirect.gov.au/what-to-expect-in-intensive-care" target="_blank"><span class="material-symbols-outlined">link</span> What to expect in the I.C.U.</a></li>
+                <li><a class="emergencylinks" href="https://www.uptodate.com/contents/overview-of-the-management-of-the-severely-burned-patient" target="_blank"><span class="material-symbols-outlined">link</span> Management of burnt patients</a></li>
+            </ul>
+
+
+        <p align="left" style="color:rgba(0,0,0,.7);padding:40px;">
+
+
+
+            At LifeLine Hospital, we understand the critical importance of swift and
+            effective response in emergency situations. Our dedicated team of highly trained medical professionals is equipped 
+            to handle a wide spectrum of emergencies with precision and compassion.<br><br>
+            From cardiac incidents to trauma cases, our streamlined emergency procedures ensure immediate
+            assessment, stabilization, and treatment. Our state-of-the-art Emergency Department is equipped with advanced diagnostic tools,
+            enabling rapid and accurate diagnoses. <br><br>
+            LifeLine Hospital prioritizes a multidisciplinary approach, seamlessly integrating specialists and 
+            utilizing cutting-edge technology to provide timely and comprehensive care.<br><br>
+            With a commitment to excellence, our emergency response team is
+            ready around the clock to provide the community with the highest standard of
+            emergency medical services, assuring patients and their families 
+            that they are in capable and caring hands during times of crisis
+        
+        </p>
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <footer class="foot">
+            <div class="lmaolmaolmao">
+                <table>
+                    <thead style="padding-right:30px;text-align: left;top:0">
+                   
+                        <th style="padding-right:30px;text-align: left;top:0">CONTACT US</th>
+                        
+                        <th style="padding-right:30px;text-align: left;top:0">OUR BRANCHES</th>
+                    
+                    
+                </thead>
+                <tbody>
+                    <tr ><td style="padding-right:30px;text-align: left;top:0">
+                        <ul style="list-style-type:none;">
+                            <li><a style="text-decoration: none;color:white" href="https://x.com/laaxmih?s=21" class="button">Twitter</a></li>
+                            <li><a style="text-decoration: none;color:white" href="https://www.instagram.com/_lifeline_hospital?igshid=OGQ5ZDc2ODk2ZA==" class="button">Instagram</a></li>
+                            <li>+91-7488277353</li>
+                        </ul>
+                    </td>
+                    <td style="padding-right:30px;text-align: top;top:0">
+                        <ul style="list-style-type:none;">
+                            <li>Bengaluru</li>
+                            <li>Chennai</li>
+                            <li>Mumbai</li>
+                            <li>Hyderabad</li>
+                            <li>New Delhi</li>
+                        </ul></td>  
+                    </tr>
+                </tbody>
+                </table>
+                    
+                    
+                
+                <div style="color:white;margin-bottom: 30px;font-size: 20px;" align="center">&copy; 2023 Lifeline Hospitals, Inc. All Rights Reserved</div>
+            </div>
+        </footer>
+
+
+
+
+
+          <script>
+            
+   
+            var aboutbttn = document.getElementById('aboutus');
+
+            if (event.target == aboutbttn){
+            window.onclick = function(event) {
+                event.preventDefault();
+                window.location.href = "about.html";}}
+
+
+                function lessmoreFunc() 
+                {
+                    var dots = document.getElementById("dots");
+                    var moreText = document.getElementById("more");
+                    var btnText = document.getElementById("lessmorebtn");
+
+                    if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                    } 
+                    else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                    }
+                }
+            </script>
+                 
+        </body>
+        </html>

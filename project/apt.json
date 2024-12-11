@@ -1,0 +1,16 @@
+var storedData = JSON.parse(localStorage.getItem('appointForms')) || [];
+
+    // Access the HTML element where you want to display the data
+    var appointFormsElement = document.getElementById('appointForms');
+
+    // Display each entry
+    storedData.forEach(function (entry) {
+      var entryDiv = document.createElement('div');
+      entryDiv.innerHTML = `
+        <p><strong>Name:</strong> ${entry.name}</p>
+        <p><strong>Email:</strong> ${entry.email}</p>
+        <p><strong>Condition:</strong> ${entry.condition}</p>
+        <hr>
+      `;
+      appointFormsElement.appendChild(entryDiv);
+    });

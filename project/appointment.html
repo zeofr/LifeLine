@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link src="logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;600&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>APPOINTMENT</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+        <style>
+          body  {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            word-spacing: 5px;
+            line-height: 1.5;
+             }
+
+          nav a{
+                  
+                  text-decoration: none;
+                  color: azure;
+                  
+                  
+                  }
+                  a{padding:10px;}
+
+                  nav{position: sticky;
+                       position: -webkit-sticky;
+                       top: 0;
+                       background-color: blueviolet;
+                       
+                   padding-top:20px;padding-bottom: 20px;}
+
+                   .pic{max-height: 50px;max-width: 50px;padding-left: 20px;padding-right:65%;position: relative ;bottom:13px;}
+
+
+
+                   h1,h3{font-family: 'Rajdhani', sans-serif;}
+
+             footer{
+             background-image: url(footer.jpg);
+             background-size: cover;
+             
+             background-attachment: fixed;
+             background-position: center;
+             
+             color:white;
+             padding:50px;
+             width:100%;
+             line-height: 50px;
+             font-family:'Times New Roman', Times, serif;
+             padding-top: 60px;
+             padding-bottom: 60px;
+             font-size: 15px;}
+
+
+
+                .aptinput{
+                    padding:10px;
+                    margin-left:30%;
+                    border-width: 0px;
+                    border-bottom: 2px solid rgb(0,0,0);
+                    font-size:20px;
+                    margin-top:40px
+                }
+               
+                
+                .submit-btn:hover{background-color:white;
+                color:green;
+                border:2px solid green;
+                width:40%;
+                padding:30px;
+                border-radius: 20px;
+                margin-left:20%;
+                margin-right:20%;
+                
+                
+                }
+                #aptbox{
+                background-position: 40%;
+                border-radius: 20px;
+
+            
+            
+                padding:20px;
+                margin:30px;
+                border-radius: 20px;
+                border:2px solid rgba(0,0,0,.7);
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                padding:30px 40px;
+            
+                justify-content: right;
+                align-items: center;
+            margin-right: 15%;
+            margin-left:15%;
+            width:70%;
+            margin-top: 100px;
+                }
+                .submit-btn{
+                    width:40%;
+
+                    padding:32px;
+                    border-radius: 20px;
+                    margin-left:20%;
+                    margin-right:20%;
+                    background-color: green;
+                    color:white; 
+                    border:transparent;
+                }
+                   </style>
+
+                   </head>
+                   <body>
+
+                    <nav style="background-color: blueviolet;position: sticky;padding-top:30px;padding-bottom: 30px;top:0;">
+                        <img src="logo.png" alt="error" class="pic"  align="left">
+                        <a href="main.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="appointment.html">Appointment</a>
+                        <a href="login.html" style="border-width: 1px;border-color: aliceblue;border-radius: 20px;">Log Out</a>
+                    </nav>
+
+
+                    
+
+
+                    <section id="aptbox">
+                        <img src="logo.png" alt="error in loading logo" style="max-width: 70px;max-height:70px;margin:20px;"><h2 align="left" style="position: relative;bottom:110px;left:100px">LifeLine</h2>
+                        <h1 style="font-size: 40px;text-align: center;padding-bottom:70px;padding-top:20px;font-family: Arial, Helvetica, sans-serif;">
+                            APPOINTMENT FORM
+                        </h1>
+                        
+                    <form id="aptform"> 
+                        <table> 
+                        <tr> 
+                        <td>Name:</td> 
+                        <td ><input for="name" type="text" class="aptinput" name="name" id ="name" required autocomplete=""></td> 
+                        </tr> 
+                        <tr> 
+                        <td>Email:</td> 
+                        <td><input for="email" class="aptinput" type="email" id="email" name="email"  required autocomplete></td> 
+                        </tr> 
+                        <tr> 
+                        <td>Blood Group:</td> 
+                        <td><select for="blood-group" class="aptinput" style="padding:5px" name="bloodgroup" id="bloodgroup"  required> 
+                            <option value="0">--Enter Your Blood Group--</option>
+                            <option value="ap">A+</option> 
+                            <option value="an">A-</option> 
+                            <option value="bp">B+</option> 
+                            <option value="bn">B-</option> 
+                            <option value="abp">AB+</option> 
+                            <option value="abn">AB-</option>
+                            <option value="op">O+</option>
+                            <option value="on">O-</option></td> 
+                        </tr> 
+                        <tr> 
+                        <td>Describe Your Condition</td> 
+                        <td><textarea for="condition" name="message" class="aptinput" id="condition" rows="5" width="300px"></textarea  required></td> 
+                        </tr> 
+                        <tr> 
+                        <td style="padding-top:40px;">City:</td> 
+                        <td> 
+                        <select for="branch-city" class="aptinput" style="padding:5px" name="rating" id="city" required> 
+                        <option value="0">--Enter Your City--</option>
+                        <option value="blr">Bengaluru</option> 
+                        <option value="chennai">Chennai</option> 
+                        <option value="mumbai">Mumbai</option> 
+                        <option value="hyd">Hyderabad</option> 
+                        <option value="newdelhi">New Delhi</option> 
+                        </select> 
+                        </td> 
+                        </tr> 
+                        <tr> 
+                         
+                        <td style="padding-top: 40px;" role="2" align="center"> 
+                        <input style="padding-top:40px;" type="checkbox" name="recommend" value="yes"  required> All the information are correct and legit as per my knowledge 
+                        </td> 
+                        </tr> 
+                        </table> 
+                    
+                        <div style="padding-top: 40px;"  align="center"> 
+                        <input type="submit" value="Submit" class="submit-btn" style="padding: 10px;" > 
+                        </div> 
+                        </form> 
+                    </section>
+
+
+
+
+
+
+
+                    <footer class="foot">
+                        <div class="lmaolmaolmao">
+                            <table>
+                                <thead style="padding-right:30px;text-align: left;top:0">
+                               
+                                    <th style="padding-right:30px;text-align: left;top:0">CONTACT US</th>
+                                    
+                                    <th style="padding-right:30px;text-align: left;top:0">OUR BRANCHES</th>
+                                
+                                
+                            </thead>
+                            <tbody>
+                                <tr ><td style="padding-right:30px;text-align: left;top:0">
+                                    <ul style="list-style-type:none;">
+                                        <li><a style="text-decoration: none;color:white" href="https://x.com/laaxmih?s=21" class="button">Twitter</a></li>
+                                        <li><a style="text-decoration: none;color:white" href="https://www.instagram.com/_lifeline_hospital?igshid=OGQ5ZDc2ODk2ZA==" class="button">Instagram</a></li>
+                                    </ul>
+                                </td>
+                                <td style="padding-right:30px;text-align: top;top:0">
+                                    <ul style="list-style-type:none;">
+                                        <li>Bengaluru</li>
+                                        <li>Chennai</li>
+                                        <li>Mumbai</li>
+                                        <li>Hyderabad</li>
+                                        <li>New Delhi</li>
+                                    </ul></td>  
+                                </tr>
+                            </tbody>
+                            </table>
+                                
+                                
+                            
+                            <div style="color:white;margin-bottom: 30px;font-size: 20px;" align="center">&copy; 2023 Lifeline Hospitals, Inc. All Rights Reserved</div>
+                        </div>
+                    </footer>
+  
+
+
+
+
+
+                    <script>
+                        document.getElementById('aptform').addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+                // Get form values
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var bloodgroup = document.getElementById('bloodgroup').value;
+                var condition = document.getElementById('condition').value;
+                var city = document.getElementById('city').value;
+
+                // Create an object to represent the appointment entry
+                var appointForm = {
+                    name: name,
+                    email: email,
+                    bloodgroup:bloodgroup,
+                    condition: condition,
+                    city: city,
+                };
+
+                // Get existing data from local storage or initialize an empty array
+                var existingData = JSON.parse(localStorage.getItem('appointForms')) || [];
+
+                // Add the new entry to the array
+                existingData.push(appointForm);
+
+                // Store the updated array back in local storage
+                localStorage.setItem('appointForms', JSON.stringify(existingData));
+
+                // Display the stored data on the webpage
+                displayStoredData();
+                });
+
+    function displayStoredData() {
+      // Get the stored data from local storage
+      var storedData = JSON.parse(localStorage.getItem('appointForms')) || [];
+
+      // Access the HTML element where you want to display the data
+      var displayElement = document.getElementById('displayData');
+
+      // Clear existing content
+      displayElement.innerHTML = '';
+
+      // Display each entry
+      storedData.forEach(function (entry) {
+        displayElement.innerHTML += `
+          <div class="display">
+            <p><strong>Name:</strong> ${entry.name}</p>
+            <p><strong>Email:</strong> ${entry.email}</p>
+            <p><strong>Blood Group:</strong> ${entry.bloodgroup}</p>
+            <p><strong>Condition:</strong> ${entry.condition}</p>
+            <p><strong>City:</strong> ${entry.city}</p>
+          </div>
+        `;
+      });
+    }
+
+    // Initial display when the page loads
+    displayStoredData();
+
+    // Add event listener to the "Add New" button
+    document.getElementById('addNewButton').addEventListener('click', function () {
+      // Toggle the display of the new entry form
+      var newEntryForm = document.getElementById('newEntryForm');
+      newEntryForm.style.display = newEntryForm.style.display === 'none' ? 'block' : 'none';
+    });
+                    </script>
+
+        </body>
+     </html>
